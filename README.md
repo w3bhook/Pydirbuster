@@ -1,13 +1,22 @@
 # PyDirbuster
 
 <h2 align="center">About The Project</h2>
-sdkme doedoe nodne no
+
+<p align="left">sdkme doedoe nodne no</p>
 
 ```python
 print(eval(input("Enter a number: ")))
 ```
 
-<h2 align="center">My stack :man_technologist:</h2>
+<h2 align="center">Setup :man_technologist:</h2>
+<p align="left">
+    1. Download the github repository <code>git clone https://github.com/DuckyPL/Pydirbuster.git</code>
+    2. Enter the folder <code>cd Pydirbuster</code>
+    3. Download the requirements <code>python3 -m pip install -r requirements.txt</code>
+    4 [optional]. Add custom wordlists to ./wordlists/
+    5. Run main.py <code>python3 main.py < url > [ wordlist ]</code>
+    6. Wait untill the program is done (every url in the terminal returned back by the program has given response 200)
+</p>
 
 <p align="center">Tools that I use on a daily basis, or that I've used or worked (either much or a bit) with on the past</p>
 <p align="center">
@@ -15,22 +24,5 @@ print(eval(input("Enter a number: ")))
     <img src="http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat" alt="DuckyPL :: StackShare" />
   </a>
 </p>
-
-<h2 align="center">Github stats :bar_chart:</h2>
-
-<h4 align="center">Visitor's count :eyes:</h4>
-
-<p align="center"><img src="https://profile-counter.glitch.me/{DuckyPL}/count.svg" alt="DuckyPL :: Visitor's Count" /></p>
-
-<h4 align="center">Top langs :tongue:</h4>
-
-<p align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DuckyPL&langs_count=10&theme=tokyonight&layout=compact" alt="DuckyPL :: Top Langs" /></p>
-
-<h4 align="center">Profile stats :musical_keyboard:</h4>
-
-<p align="center"><img src="https://github-readme-stats.vercel.app/api?username= &show_icons=true&theme=synthwave" alt="DuckyPL :: Profile Stats" /></p>
-
-<p align="center"><img src="https://thumbs.gfycat.com/GoodnaturedFondGaur-size_restricted.gif" alt="Synthwave" height="300" width="500"></p>
-
 
 ---
