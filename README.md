@@ -2,6 +2,7 @@
 
 <span>
   <img src="https://img.shields.io/github/v/release/duckypl/pydirbuster?label=release&style=flat-square" align="center">
+  <img src="https://img.shields.io/pypi/pyversions/django?style=flat-square" align="center">
 </span>
 
 <h2 align="center">About The Project</h2>
