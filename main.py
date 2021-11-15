@@ -17,7 +17,7 @@ from sys import argv
 from art import tprint
 
 version = "1.0.0"
-deep = list()
+layer2 = list()
 
 def main(url, wordlist = ".\\wordlists\\pydirbuster_wordlist_small.txt"):
 	with open(wordlist) as words:
@@ -31,18 +31,41 @@ def main(url, wordlist = ".\\wordlists\\pydirbuster_wordlist_small.txt"):
 
 			for count in words:
 				try:
+
 					res = get(url=url+count)
+					if "200" in str(res):
+						print(f"{url}{count}")
+						layer2.append(url+count)
+
+					res = get(url=url+count+".html")
+					if "200" in str(res):
+						print(f"{url}{count}.html")
+						layer2.append(url+count)
+
+					res = get(url=url+count+"/")
+					if "200" in str(res):
+						print(f"{url}{count}/")
+						layer2.append(url+count)
+
 				except exceptions.ConnectionError:
 					print(f"Unable to reach given url: {url}")
 					quit()
 
-				if "200" in str(res):
-					print(f"{url}{count}")
-					deep.append(url+count)
-
 			for count in words:
 				try:
-					res = get(url=deep+"/"+count)
+
+					res = get(url=layer2+"/"+count)
+					if "200" in str(res):
+						print(f"{url}/{count}")
+
+					res = get(url+layer2+"/"+count+".html")
+					if "200" in str(res):
+						print(f"{url}/{count}.html")
+
+					res = get(url+layer2+"/"+count+"/")
+					if "200" in str(res):
+						print(f"{url}/{count}/")
+
 				except exceptions.ConnectionError:
 					print(f"Unable to reach given url: {url}")
 					quit()
