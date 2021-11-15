@@ -3,7 +3,7 @@
 <h2 align="center">About The Project</h2>
 
 <p align="left">
-    Pydirbuster was a project created by me (Ducky#9982 on discord), It was aimed to increase the level i worked
+    Pydirbuster was a project created by me (Ducky#9982 on discord), It was aimed to increase the level i worked at while improving my mental and technical skillset, public for anybody's use just please credit me if you would like to publish it yourself. Will be updated regularly, such as to include subdomain fuzzing and deeper penetration with directory fuzzing.
 </p>
 
 ```python
